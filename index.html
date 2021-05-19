@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>T-Task</title>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="wrap-header">
+        <a class="header__logo">
+          <img src="img/logo.png" alt="логотип">
+        </a>
+        <nav class="nav">
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#" class="nav__link">Main</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Gallery</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">News</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Profile</a>
+            </li>
+          </ul>
+          <div class="wrap-contacts">  
+            <ul class="contacts__list">
+              <li class="contacts__item">
+                <a href="tel:+544349000000" class="contact__link">+544 3490 00000</a>
+              </li>
+            </ul>
+            <p class="contacts__text">Звони скорее!</p>
+          </div>
+        </nav>
+      </div>      
+      <h1 class="header__title">Найдено <span>349</span> котов</h1>
+    </div>    
+  </header>
+  <main>
+    <section class="filter-cats">
+      <div class="container">
+        <h2 class="visually-hidden">Сортировка котэ</h2>
+        <div class="filter">
+          <h3 class="filter__title">Сортировать по:</h3>
+          <ul class="filter__list">
+            <li class="filter__item">              
+              <input class="filter__input filter-amount visually-hidden" type="checkbox" name="price" id="price">
+              <label class="filter__label" for="price">Цене</label>
+            </li>
+            <li class="filter__item">              
+              <input class="filter__input filter-age visually-hidden" type="checkbox" name="age" id="age">
+              <label class="filter__label" for="age">Возрасту</label>
+            </li>
+          </ul>
+        </div>   
+                    
+        <h2 class="visually-hidden">Список котэ</h2>
+        <ul class="cats__list">
+          <li class="cats__item sale" data-amount="30000" data-age="2">
+            <h3 class="cat-heading">Кот полосатый</h3>
+            <p class="cat-img">
+              <img src="img/cat-1.jpg" alt="">
+              <a class="heart">
+                <svg width="46" height="42" viewBox="0 0 46 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M33.7812 0.695312C31.2851 0.695312 28.9966 1.4863 26.9794 3.04634C25.0456 4.54197 23.758 6.44693 23 7.83214C22.242 6.44684 20.9544 4.54197 19.0206 3.04634C17.0034 1.4863 14.7149 0.695312 12.2188 0.695312C5.25298 0.695312 0 6.39293 0 13.9485C0 22.1112 6.55347 27.696 16.4746 36.1505C18.1593 37.5863 20.0689 39.2138 22.0538 40.9494C22.3154 41.1785 22.6514 41.3047 23 41.3047C23.3486 41.3047 23.6846 41.1785 23.9462 40.9495C25.9312 39.2136 27.8408 37.5862 29.5265 36.1496C39.4465 27.696 46 22.1112 46 13.9485C46 6.39293 40.747 0.695312 33.7812 0.695312Z" fill="white"/>
+                </svg>
+              </a>
+            </p>
+            <ul class="cat-option__list">
+              <li class="cat-option__item">
+                <p class="cat-option__text">Коричневый окрас</p>
+              </li>
+              <li class="cat-option__item">
+                <p class="cat-option__title"><span>2</span> мес.</p>
+                <p class="cat-option__text">Возраст</p>
+              </li>
+              <li class="cat-option__item">
+                <p class="cat-option__title">4</p>
+                <p class="cat-option__text">Кол-во лап</p>
+              </li>
+            </ul>
+            <p class="cat-price"><span class="amount">30 000</span> руб.</p>
+            <a class="cat-buy" href="#">Купить</a>
+          </li>
+          <li class="cats__item" data-amount="40000" data-age="3">
+            <h3 class="cat-heading">Кот полосатый</h3>
+            <p class="cat-img">
+              <img src="img/cat-2.jpg" alt="">
+              <a class="heart">
+                <svg width="46" height="42" viewBox="0 0 46 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M33.7812 0.695312C31.2851 0.695312 28.9966 1.4863 26.9794 3.04634C25.0456 4.54197 23.758 6.44693 23 7.83214C22.242 6.44684 20.9544 4.54197 19.0206 3.04634C17.0034 1.4863 14.7149 0.695312 12.2188 0.695312C5.25298 0.695312 0 6.39293 0 13.9485C0 22.1112 6.55347 27.696 16.4746 36.1505C18.1593 37.5863 20.0689 39.2138 22.0538 40.9494C22.3154 41.1785 22.6514 41.3047 23 41.3047C23.3486 41.3047 23.6846 41.1785 23.9462 40.9495C25.9312 39.2136 27.8408 37.5862 29.5265 36.1496C39.4465 27.696 46 22.1112 46 13.9485C46 6.39293 40.747 0.695312 33.7812 0.695312Z" fill="white"/>
+                </svg>
+              </a>
+            </p>
+            <ul class="cat-option__list">
+              <li class="cat-option__item">
+                <p class="cat-option__text">Коричневый окрас</p>
+              </li>
+              <li class="cat-option__item">
+                <p class="cat-option__title"><span>3</span> мес.</p>
+                <p class="cat-option__text">Возраст</p>
+              </li>
+              <li class="cat-option__item">
+                <p class="cat-option__title">4</p>
+                <p class="cat-option__text">Кол-во лап</p>
+              </li>
+            </ul>
+            <p class="cat-price"><span class="amount">40 000</span> руб.</p>
+            <a class="cat-buy sold" href="#">Купить</a>
+          </li>
+          <li class="cats__item" data-amount="20000" data-age="5">
+            <h3 class="cat-heading">Кот полосатый</h3>
+            <p class="cat-img">
+              <img src="img/cat-3.jpg" alt="">
+              <a class="heart heart_like">
+                <svg width="46" height="42" viewBox="0 0 46 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M33.7812 0.695312C31.2851 0.695312 28.9966 1.4863 26.9794 3.04634C25.0456 4.54197 23.758 6.44693 23 7.83214C22.242 6.44684 20.9544 4.54197 19.0206 3.04634C17.0034 1.4863 14.7149 0.695312 12.2188 0.695312C5.25298 0.695312 0 6.39293 0 13.9485C0 22.1112 6.55347 27.696 16.4746 36.1505C18.1593 37.5863 20.0689 39.2138 22.0538 40.9494C22.3154 41.1785 22.6514 41.3047 23 41.3047C23.3486 41.3047 23.6846 41.1785 23.9462 40.9495C25.9312 39.2136 27.8408 37.5862 29.5265 36.1496C39.4465 27.696 46 22.1112 46 13.9485C46 6.39293 40.747 0.695312 33.7812 0.695312Z" fill="white"/>
+                </svg>
+              </a>
+            </p>
+            <ul class="cat-option__list">
+              <li class="cat-option__item">
+                <p class="cat-option__text">Коричневый окрас</p>
+              </li>
+              <li class="cat-option__item">
+                <p class="cat-option__title"><span>5</span> мес.</p>
+                <p class="cat-option__text">Возраст</p>
+              </li>
+              <li class="cat-option__item">
+                <p class="cat-option__title">4</p>
+                <p class="cat-option__text">Кол-во лап</p>
+              </li>
+            </ul>
+            <p class="cat-price"><span class="amount">20 000</span> руб.</p>
+            <a class="cat-buy" href="#">Купить</a>
+          </li>
+          <li class="cats__item" data-amount="25000" data-age="1">
+            <h3 class="cat-heading">Кот полосатый</h3>
+            <p class="cat-img">
+              <img src="img/cat-1.jpg" alt="">
+              <a class="heart">
+                <svg width="46" height="42" viewBox="0 0 46 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M33.7812 0.695312C31.2851 0.695312 28.9966 1.4863 26.9794 3.04634C25.0456 4.54197 23.758 6.44693 23 7.83214C22.242 6.44684 20.9544 4.54197 19.0206 3.04634C17.0034 1.4863 14.7149 0.695312 12.2188 0.695312C5.25298 0.695312 0 6.39293 0 13.9485C0 22.1112 6.55347 27.696 16.4746 36.1505C18.1593 37.5863 20.0689 39.2138 22.0538 40.9494C22.3154 41.1785 22.6514 41.3047 23 41.3047C23.3486 41.3047 23.6846 41.1785 23.9462 40.9495C25.9312 39.2136 27.8408 37.5862 29.5265 36.1496C39.4465 27.696 46 22.1112 46 13.9485C46 6.39293 40.747 0.695312 33.7812 0.695312Z" fill="white"/>
+                </svg>
+              </a>
+            </p>
+            <ul class="cat-option__list">
+              <li class="cat-option__item">
+                <p class="cat-option__text">Коричневый окрас</p>
+              </li>
+              <li class="cat-option__item">
+                <p class="cat-option__title"><span>1</span> мес.</p>
+                <p class="cat-option__text">Возраст</p>
+              </li>
+              <li class="cat-option__item">
+                <p class="cat-option__title">4</p>
+                <p class="cat-option__text">Кол-во лап</p>
+              </li>
+            </ul>
+            <p class="cat-price"><span class="amount">25 000</span> руб.</p>
+            <a class="cat-buy" href="#">Купить</a>
+          </li>
+          <li class="cats__item sale" data-amount="30000" data-age="2">
+            <h3 class="cat-heading">Кот полосатый</h3>
+            <p class="cat-img">
+              <img src="img/cat-3.jpg" alt="">
+              <a class="heart">
+                <svg width="46" height="42" viewBox="0 0 46 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M33.7812 0.695312C31.2851 0.695312 28.9966 1.4863 26.9794 3.04634C25.0456 4.54197 23.758 6.44693 23 7.83214C22.242 6.44684 20.9544 4.54197 19.0206 3.04634C17.0034 1.4863 14.7149 0.695312 12.2188 0.695312C5.25298 0.695312 0 6.39293 0 13.9485C0 22.1112 6.55347 27.696 16.4746 36.1505C18.1593 37.5863 20.0689 39.2138 22.0538 40.9494C22.3154 41.1785 22.6514 41.3047 23 41.3047C23.3486 41.3047 23.6846 41.1785 23.9462 40.9495C25.9312 39.2136 27.8408 37.5862 29.5265 36.1496C39.4465 27.696 46 22.1112 46 13.9485C46 6.39293 40.747 0.695312 33.7812 0.695312Z" fill="white"/>
+                </svg>
+              </a>
+            </p>
+            <ul class="cat-option__list">
+              <li class="cat-option__item">
+                <p class="cat-option__text">Коричневый окрас</p>
+              </li>
+              <li class="cat-option__item">
+                <p class="cat-option__title"><span>2</span> мес.</p>
+                <p class="cat-option__text">Возраст</p>
+              </li>
+              <li class="cat-option__item">
+                <p class="cat-option__title">4</p>
+                <p class="cat-option__text">Кол-во лап</p>
+              </li>
+            </ul>
+            <p class="cat-price"><span class="amount">30 000</span> руб.</p>
+            <a class="cat-buy" href="#">Купить</a>
+          </li>
+          <li class="cats__item" data-amount="10000" data-age="2">
+            <h3 class="cat-heading">Кот полосатый</h3>
+            <p class="cat-img">
+              <img src="img/cat-2.jpg" alt="">
+              <a class="heart">
+                <svg width="46" height="42" viewBox="0 0 46 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M33.7812 0.695312C31.2851 0.695312 28.9966 1.4863 26.9794 3.04634C25.0456 4.54197 23.758 6.44693 23 7.83214C22.242 6.44684 20.9544 4.54197 19.0206 3.04634C17.0034 1.4863 14.7149 0.695312 12.2188 0.695312C5.25298 0.695312 0 6.39293 0 13.9485C0 22.1112 6.55347 27.696 16.4746 36.1505C18.1593 37.5863 20.0689 39.2138 22.0538 40.9494C22.3154 41.1785 22.6514 41.3047 23 41.3047C23.3486 41.3047 23.6846 41.1785 23.9462 40.9495C25.9312 39.2136 27.8408 37.5862 29.5265 36.1496C39.4465 27.696 46 22.1112 46 13.9485C46 6.39293 40.747 0.695312 33.7812 0.695312Z" fill="white"/>
+                </svg>
+              </a>
+            </p>
+            <ul class="cat-option__list">
+              <li class="cat-option__item">
+                <p class="cat-option__text">Коричневый окрас</p>
+              </li>
+              <li class="cat-option__item">
+                <p class="cat-option__title"><span>2</span> мес.</p>
+                <p class="cat-option__text">Возраст</p>
+              </li>
+              <li class="cat-option__item">
+                <p class="cat-option__title">4</p>
+                <p class="cat-option__text">Кол-во лап</p>
+              </li>
+            </ul>
+            <p class="cat-price"><span class="amount">10 000</span> руб.</p>
+            <a class="cat-buy sold" href="#">Купить</a>
+          </li>
+        </ul>
+        <a class="btn-show" href="#">Показать еще 20</a>
+      </div>
+    </section>
+    <a class="arrow-up"><span class="visually-hidden">наверх</span></a>
+  </main>
+  <footer class="footer">
+    <div class="wrap-footer">
+      <div class="wrap-title">
+        <h2 class="footer__title">Успей купить!</h2>
+        <p class="footer__description">Подпишись и успей словить все акции</p>
+      </div>
+      <form class="footer__form" action="#">
+        <div class="wrap-input">
+          <input class="form__input" type="email" name="" id="" placeholder="Email" required pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" >
+          <button class="form__btn">Подписаться</button>
+        </div>
+        <div class="wrap-checkbox">
+          <input class="form__checkbox visually-hidden" type="checkbox" name="spam" id="spam" checked>
+          <label class="form__label" for="spam">Подписаться на новости</label>
+        </div>        
+      </form>
+    </div>    
+  </footer>
+  <section class="popup">
+    <p>Добавлено в избранное</p>
+  </section>
+  <script src="script.js"></script>
+  <script src="sort.js"></script>
+</body>
+</html>
